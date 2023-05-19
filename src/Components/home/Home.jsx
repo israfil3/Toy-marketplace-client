@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './My project (1).png';
 import './home.css'
+
 const Home = () => {
     return (
        <div className='flex items-center justify-between bg-lime-200 text-2xl px-12'>
@@ -22,3 +23,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+

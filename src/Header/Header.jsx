@@ -1,9 +1,11 @@
 import React from 'react';
 import './header.css'
+import Slider from '../Components/gallre/salider/Slider';
 
 const Header = () => {
     return (
-        <div className='bg-green-200'>
+                <>
+                       <div className='bg-green-200'>
               <div className="carousel total-width mx-auto">
                     <div id="item1" className="carousel-item w-full">
                         <img  src="https://c4.wallpaperflare.com/wallpaper/1016/903/650/render-superman-black-uniform-wallpaper-preview.jpg" className="img-height" />
@@ -24,7 +26,11 @@ const Header = () => {
                         <a href="#item3" className="btn btn-xs btn-outline btn-error">3</a> 
                         <a href="#item4" className="btn btn-xs btn-outline btn-warning">4</a>
                     </div>
-            </div>
+            </div>                
+                <div className="mt-38 bg-lime-300">
+                    <Slider></Slider>
+                </div>
+                </>
             );
 };
 
