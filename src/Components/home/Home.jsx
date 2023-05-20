@@ -5,7 +5,7 @@ import './home.css'
 
 const Home = () => {
     return (
-       <div className='flex items-center justify-between bg-lime-200 text-2xl px-12'>
+       <div className='flex items-center justify-between text-2xl px-12 bg-slate-500'>
             <img className='logo' src={logo} alt="" />
             <div className="nav-area">
                 <Link className="btn btn-sm btn-outline btn-error" to={'home'}>Home</Link>

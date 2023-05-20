@@ -6,7 +6,7 @@ import CarTabs from '../Components/allTabs/CarTabs';
 const Header = () => {
     return (
                 <>
-                       <div className='bg-green-200'>
+                       <div>
               <div className="carousel total-width mx-auto">
                     <div id="item1" className="carousel-item w-full">
                         <img  src="https://c4.wallpaperflare.com/wallpaper/1016/903/650/render-superman-black-uniform-wallpaper-preview.jpg" className="img-height" />
@@ -28,7 +28,7 @@ const Header = () => {
                         <a href="#item4" className="btn btn-xs btn-outline btn-warning">4</a>
                     </div>
             </div>                
-                <div className="mt-38 bg-lime-300">
+                <div className="mt-38 ">
                     <Slider></Slider>
                 </div>
                 <div className="">

@@ -8,17 +8,17 @@ const CarTabs = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [useData,setData] = useState([]);
     useEffect(()=> {
-      fetch('data.json')
+      fetch('http://localhost:5000/superman')
         .then(res => res.json())
         .then(data => setData(data))
     },[])
-      console.log(useData.spider)
+      console.log(useData[0]?.name)
     const handleTabSelect = (index) => {
         setActiveTab(index);
       };
     return (
         <div>
-            <Tabs className="text-center bg-teal-400">
+            <Tabs className="text-center">
               <Tabs selectedIndex={activeTab} onSelect={handleTabSelect}>
                   <TabList>
                   <Tab>Spider Man</Tab>
@@ -26,75 +26,91 @@ const CarTabs = () => {
                   <Tab>Captain America</Tab>
                   </TabList>
 
-                  <TabPanel className='grid grid-cols-2 mx-auto '>
-                    {
-                      useData.spider?.map(dk=>
- 
-                      <div className="card w-96 glass grid grid-cols-2 mx-auto my-10 bg-red-400">
-                          <figure><img className='rounded' src={dk.picture} alt="car!"/></figure>
-                          <div className="card-body">
-                            <h2 className="card-title">{dk.name}</h2>
-                            <h2>Price: {dk.price}$</h2>
-                            <div className="rating">
-                              <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                              <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
-                              <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                              <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                              <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                            </div>
-                            <div className="card-actions justify-end">
-                              <button className="btn btn-outline btn-success">View Details</button>
-                            </div>
-                          </div>
-                        </div> )
-                    }
-                              
-                  </TabPanel>
-
-                  <TabPanel>
-                      {
-                        useData.ironman?.map(ik =>
-                          <div className="card w-96 glass grid grid-cols-2 mx-auto my-10 bg-red-400">
-                          <figure><img className='rounded' src={ik.picture} alt="car!"/></figure>
-                          <div className="card-body">
-                            <h2 className="card-title">{ik.name}</h2>
-                            <h2>Price: {ik.price}$</h2>
-                                <div className="rating">
-                                    <input type="radio" name="rating-1" className="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                </div>
-                            <div className="card-actions justify-end">
-                              <button className="btn btn-outline btn-success">View Details</button>
-                            </div>
-                          </div>
-                        </div> )
-                      }
-                  </TabPanel>
-
-                  <TabPanel>
-                  {
-                    useData.captain?.map(ck =>
-                      <div className="card w-96 glass grid grid-cols-2 mx-auto my-10 bg-red-400">
-                      <figure><img className='rounded' src={ck.picture} alt="car!"/></figure>
-                      <div className="card-body">
-                        <h2 className="card-title">{ck.name}</h2>
-                        <h2>Price: {ck.price}$</h2>
-                        <div className="rating">
-                          <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                          <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
-                          <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                          <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                          <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
-                        </div>
-                        <div className="card-actions justify-end">
-                          <button className="btn btn-outline btn-success">View Details</button>
+                  <TabPanel className="">
+                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[0]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[0]?.name}</h2>
+                          <p>Price: {useData[0]?.price} $</p>
+                          <p>Rating: {useData[0]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
                         </div>
                       </div>
-                    </div> )
-                  }
+                    </div>
+                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[1]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[1]?.name}</h2>
+                          <p>Price: {useData[1]?.price} $</p>
+                          <p>Rating: {useData[1]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
+                        </div>
+                      </div>
+                    </div>
+                  </TabPanel>
+                              
+                  <TabPanel>
+                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[2]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[2]?.name}</h2>
+                          <p>Price: {useData[2]?.price} $</p>
+                          <p>Rating: {useData[2]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[3]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[3]?.name}</h2>
+                          <p>Price: {useData[3]?.price} $</p>
+                          <p>Rating: {useData[3]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
+                        </div>
+                      </div>
+                    </div>
+                  </TabPanel>
+
+                  <TabPanel>
+                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[4]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[4]?.name}</h2>
+                          <p>Price: {useData[4]?.price} $</p>
+                          <p>Rating: {useData[4]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                      <figure className="px-10 pt-10">
+                        <img src={useData[5]?.picture} alt="Shoes" className="rounded-xl" />
+                      </figure>
+                      <div className="card-body items-center text-center">
+                      <h2 className="card-title">{useData[5]?.name}</h2>
+                          <p>Price: {useData[5]?.price} $</p>
+                          <p>Rating: {useData[5]?.rating}</p> 
+                        <div className="card-actions">
+                          <button className="btn btn-outline btn-warning">View Details </button>
+                        </div>
+                      </div>
+                    </div>
                   </TabPanel>
               </Tabs>
             </Tabs>
@@ -103,3 +119,4 @@ const CarTabs = () => {
 };
 
 export default CarTabs;
+ 
