@@ -1,0 +1,18 @@
+{
+    "spider1":[  {
+        "name":"Red SpiderMan",
+        "price": 59.49,
+        "rating": 4.1,
+        "picture": "https://images.eprice.it/nobrand/0/hres/939/304566939/81OxakQWPNL._AC_SL1500.jpg"
+        }, 
+        {
+        "name":"Black Spider",
+        "price": 34.96,
+        "rating": 4.5,
+        "picture": "https://m.media-amazon.com/images/I/91vaxbvm-YL._AC_SL1500_.jpg"
+        } ]
+      
+      
+}
+  
+  

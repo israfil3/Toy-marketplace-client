@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css'
 import Slider from '../Components/gallre/salider/Slider';
+import CarTabs from '../Components/allTabs/CarTabs';
 
 const Header = () => {
     return (
@@ -29,6 +30,9 @@ const Header = () => {
             </div>                
                 <div className="mt-38 bg-lime-300">
                     <Slider></Slider>
+                </div>
+                <div className="">
+                   <CarTabs></CarTabs>
                 </div>
                 </>
             );
