@@ -7,7 +7,6 @@ import 'react-tabs/style/react-tabs.css';
 
 const CarTabs = () => {
     const [activeTab, setActiveTab] = useState(0);
-    const [newData,getData] = useState([])
     const [useData,setData] = useState([]);
     useEffect(()=> {
       fetch('https://myservar.vercel.app/superman')

@@ -5,6 +5,7 @@ const Login = () => {
     const {login} = useContext(AuthContext)
 
     const loginUser = (event) => {
+        event.preventDefault()
         const form = event.target;
         const email =form.email.value;
         const password = form.password.value
@@ -14,7 +15,9 @@ const Login = () => {
             const user = user.result;
             console.log(user)
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+            const errorMassage = error.massage
+        })
     }
     return (
         <div>  

@@ -8,8 +8,13 @@ const AllToys = () => {
             fetch('https://myservar.vercel.app/superman')
             .then(res => res.json())
             .then(data => setUser(data))
-        },[])
+        },[]);
+        if(allUser.length > 20){
+            alert('Data limit only 20');
+            return;
+        }
     return (
+
         <div> 
            <div className="flex justify-between px-10 text-2xl">
               <h1>Seller</h1>

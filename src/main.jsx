@@ -11,6 +11,7 @@ import Sing from './Components/singtag/Sing.jsx';
 import Login from './Components/login/Login.jsx';
 import AuthProvider from './authProvider/AuthProvider.jsx';
 import SingleToy from './Components/singleToy/SingleToy.jsx';
+import PrivateRoute from '../PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,8 +47,9 @@ const router = createBrowserRouter([
     },
     {
       path:"newToy/:id",
-      element:<SingleToy></SingleToy>,
-      loader:({params})=> fetch(`http://localhost:5173/newToy/${params.id}`)
+      element:<PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
+      // loader:({params})=> fetch(`https://myservar-israfil3.vercel.app/superman/${params.id}`)
+      loader:({params})=> fetch(`http://localhost:5000/superman/${params.id}`)
     }
  
 
