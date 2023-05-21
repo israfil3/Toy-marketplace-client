@@ -10,7 +10,7 @@ const Home = () => {
             <div className="nav-area">
                 <Link className="btn btn-sm btn-outline btn-error" to={'home'}>Home</Link>
                 <Link  className="btn btn-sm btn-outline btn-error" to={'blog'}>Blogs</Link>
-                <Link  className="btn btn-sm btn-success" to={'alltoyes'}>All Toys</Link>
+                <Link  className="btn btn-sm btn-success" to={'/alltoyes'}>All Toys</Link>
                 <Link  className="btn btn-sm btn-outline btn-error">My Toys</Link>
                 <Link  className="btn btn-sm btn-outline btn-error">Add A Toys</Link>
             </div>

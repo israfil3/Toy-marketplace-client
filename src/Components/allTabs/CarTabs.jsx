@@ -1,14 +1,16 @@
 // import React from 'react';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 
 const CarTabs = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [newData,getData] = useState([])
     const [useData,setData] = useState([]);
     useEffect(()=> {
-      fetch('http://localhost:5000/superman')
+      fetch('https://myservar.vercel.app/superman')
         .then(res => res.json())
         .then(data => setData(data))
     },[])
@@ -23,7 +25,7 @@ const CarTabs = () => {
                   <TabList>
                   <Tab>Spider Man</Tab>
                   <Tab>Iron Man</Tab>
-                  <Tab>Captain America</Tab>
+                  <Tab>Captain America</Tab>   
                   </TabList>
 
                   <TabPanel className="">
@@ -36,7 +38,7 @@ const CarTabs = () => {
                           <p>Price: {useData[0]?.price} $</p>
                           <p>Rating: {useData[0]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                        <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[0]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
@@ -49,7 +51,7 @@ const CarTabs = () => {
                           <p>Price: {useData[1]?.price} $</p>
                           <p>Rating: {useData[1]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                          <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[1]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
@@ -65,7 +67,7 @@ const CarTabs = () => {
                           <p>Price: {useData[2]?.price} $</p>
                           <p>Rating: {useData[2]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                        <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[2]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
@@ -78,7 +80,7 @@ const CarTabs = () => {
                           <p>Price: {useData[3]?.price} $</p>
                           <p>Rating: {useData[3]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                        <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[3]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
@@ -94,7 +96,7 @@ const CarTabs = () => {
                           <p>Price: {useData[4]?.price} $</p>
                           <p>Rating: {useData[4]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                        <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[4]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
@@ -107,7 +109,7 @@ const CarTabs = () => {
                           <p>Price: {useData[5]?.price} $</p>
                           <p>Rating: {useData[5]?.rating}</p> 
                         <div className="card-actions">
-                          <button className="btn btn-outline btn-warning">View Details </button>
+                        <button className="btn btn-outline btn-warning"><Link to={`/newToy/${useData[5]?._id}`}>View Details</Link> </button>
                         </div>
                       </div>
                     </div>
