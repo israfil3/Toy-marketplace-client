@@ -1,65 +1,71 @@
 [
-    {
-      "name": "Red Spider",
-      "price": 59.49,
-      "rating": 4.1,
-      "picture": "https://images.eprice.it/nobrand/0/hres/939/304566939/81OxakQWPNL._AC_SL1500.jpg",
-      "seller": "alex",
-      "sub_category": "spider",
-      "quantity": "Available",
-      "description": "Bring home the Red Spider action figure and join the thrilling adventures of your favorite superhero! This highly detailed figure features articulated limbs and comes with web-slinging accessories. Get ready to defend the city against the forces of evil with Red Spider!"
-    },
-    {
-      "name": "Black Spider",
-      "price": 34.96,
-      "rating": 4.5,
-      "picture": "https://m.media-amazon.com/images/I/91vaxbvm-YL._AC_SL1500_.jpg",
-      "seller": "Watshon",
-      "sub_category": "spider",
-      "quantity": "Available",
-      "description": "Unleash the power of the Black Spider action figure! This sleek and agile figure is perfect for recreating your favorite Spider adventures. With its dynamic poseability and web-shooting action, you'll be able to defeat any villain that crosses your path. Get ready to swing into action with Black Spider!"
-    },
-    {
-      "name": "Black IronMan",
-      "price": 78.25,
-      "rating": 4.3,
-      "picture": "https://www.fitnesstotem.com/wp-content/uploads/2021/08/1904-03_IronMan_Black_v1_01.jpg",
-      "seller": "Irafil",
-      "sub_category": "Iron man",
-      "quantity": "Stock out",
-      "description": "The Black IronMan action figure is a must-have for any Iron Man fan! With its sleek black armor and powerful repulsor blasts, this figure embodies the strength and sophistication of Tony Stark's alter ego. Unfortunately, this item is currently out of stock. Keep an eye out for its availability and be ready to add it to your collection!"
-    },
-    {
-      "name": "Red IronMan",
-      "price": 59.41,
-      "rating": 5.0,
-      "picture": "https://static-01.daraz.com.bd/p/fa397a4e221439143b9d0c91de6ff1ef.jpg",
-      "seller": "Raja",
-      "sub_category": "Iron man",
-      "quantity": "Available",
-      "description": "Get ready for epic battles with the Red IronMan action figure! This highly detailed figure showcases Iron Man's iconic red and gold armor, complete with repulsor blasts and flight capabilities. Join forces with Tony Stark and save the world from threats. Add Red IronMan to your collection today!"
-    },
-    {
-      "name": "Captain-USA",
-      "price": 70.25,
-      "rating": 4.3,
-      "picture": "https://m.media-amazon.com/images/I/71C-9vFc0IL._SL1142_.jpg",
-      "seller": "alex",
-      "sub_category": "Captain",
-      "quantity": "Stock out",
-      "description": "Captain-USA action figure is the embodiment of bravery and heroism. Unfortunately, this item is currently out of stock. Keep an eye out for its availability and be ready to join the fight for justice with Captain-USA!"
-    },
-    {
-      "name": "Captain-UAE",
-      "price": 99.41,
-      "rating": 5.0,
-      "picture": "https://m.media-amazon.com/images/I/91yuck+3qML._SY355_.jpg",
-      "seller": "Salim",
-      "sub_category": "Captain",
-      "quantity": "Available",
-      "description": "Get ready to soar through the skies with the Captain-UAE action figure! This figure represents the heroic defender of justice, equipped with a shield and enhanced abilities. Join forces with Captain-UAE and take on the most challenging missions to protect the world. Add this figure to your collection and unleash your inner hero!"
-    }
-  ]
-  
+  {
+    "name": "Red Spider",
+    "price": 59.49,
+    "rating": 4.1,
+    "picture": "https://images.eprice.it/nobrand/0/hres/939/304566939/81OxakQWPNL._AC_SL1500.jpg",
+    "seller_name": "Alex",
+    "seller_email": "alex@example.com",
+    "sub_category": "spider",
+    "quantity": "Available",
+    "description": "Bring home the Red Spider action figure and join the thrilling adventures of your favorite superhero! This highly detailed figure features articulated limbs and comes with web-slinging accessories. Get ready to defend the city against the forces of evil with Red Spider!"
+  },
+  {
+    "name": "Black Spider",
+    "price": 34.96,
+    "rating": 4.5,
+    "picture": "https://m.media-amazon.com/images/I/91vaxbvm-YL._AC_SL1500_.jpg",
+    "seller_name": "Watshon",
+    "seller_email": "watshon@example.com",
+    "sub_category": "spider",
+    "quantity": "Available",
+    "description": "Unleash the power of the Black Spider action figure! This sleek and agile figure is perfect for recreating your favorite Spider adventures. With its dynamic poseability and web-shooting action, you'll be able to defeat any villain that crosses your path. Get ready to swing into action with Black Spider!"
+  },
+  {
+    "name": "Black IronMan",
+    "price": 78.25,
+    "rating": 4.3,
+    "picture": "https://www.fitnesstotem.com/wp-content/uploads/2021/08/1904-03_IronMan_Black_v1_01.jpg",
+    "seller_name": "Irafil",
+    "seller_email": "irafil@example.com",
+    "sub_category": "Iron man",
+    "quantity": "Stock out",
+    "description": "The Black IronMan action figure is a must-have for any Iron Man fan! With its sleek black armor and powerful repulsor blasts, this figure embodies the strength and sophistication of Tony Stark's alter ego. Unfortunately, this item is currently out of stock. Keep an eye out for its availability and be ready to add it to your collection!"
+  },
+  {
+    "name": "Red IronMan",
+    "price": 59.41,
+    "rating": 5.0,
+    "picture": "https://static-01.daraz.com.bd/p/fa397a4e221439143b9d0c91de6ff1ef.jpg",
+    "seller_name": "Raja",
+    "seller_email": "raja@example.com",
+    "sub_category": "Iron man",
+    "quantity": "Available",
+    "description": "Get ready for epic battles with the Red IronMan action figure! This highly detailed figure showcases Iron Man's iconic red and gold armor, complete with repulsor blasts and flight capabilities. Join forces with Tony Stark and save the world from threats. Add Red IronMan to your collection today!"
+  },
+  {
+    "name": "Captain-USA",
+    "price": 70.25,
+    "rating": 4.3,
+    "picture": "https://m.media-amazon.com/images/I/71C-9vFc0IL._SL1142_.jpg",
+    "seller_name": "Alex",
+    "seller_email": "alex@example.com",
+    "sub_category": "Captain",
+    "quantity": "Stock out",
+    "description": "Captain-USA action figure is the embodiment of bravery and heroism. Unfortunately, this item is currently out of stock. Keep an eye out for its availability and be ready to join the fight for justice with Captain-USA!"
+  },
+  {
+    "name": "Captain-UAE",
+    "price": 99.41,
+    "rating": 5.0,
+    "picture": "https://m.media-amazon.com/images/I/91yuck+3qML._SY355_.jpg",
+    "seller_name": "Salim",
+    "seller_email": "salim@example.com",
+    "sub_category": "Captain",
+    "quantity": "Available",
+    "description": "Get ready to soar through the skies with the Captain-UAE action figure! This figure represents the heroic defender of justice, equipped with a shield and enhanced abilities. Join forces with Captain-UAE and take on the most challenging missions to protect the world. Add this figure to your collection and unleash your inner hero!"
+  }
+]
+
 
 
