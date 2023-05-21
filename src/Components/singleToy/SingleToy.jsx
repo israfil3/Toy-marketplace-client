@@ -24,18 +24,3 @@ const SingleToy = () => {
 };
 
 export default SingleToy;
-        
-{/* <div className="card h-[10%] w-[30%] bg-base-100 shadow-xl mx-auto flex text-left">
-        <figure className="px-10 pt-10">
-         
-        </figure>
-            <div className="card-body items-center text-left">
-            <h2 className="card-title">Name: {name}</h2>
-            <p>Seller name:{seller_name}</p>
-            <p>Seller email: {seller_email}</p>
-            <p>price:{price}</p>
-            <p>Rating:{rating}</p>
-            <p>Available quantity:{quantity}</p>
-            <p>Details:{description}</p>
-            </div>
-        </div> */}

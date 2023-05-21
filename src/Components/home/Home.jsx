@@ -12,7 +12,7 @@ const Home = () => {
                 <Link  className="btn btn-sm btn-outline btn-error" to={'blog'}>Blogs</Link>
                 <Link  className="btn btn-sm btn-success" to={'/alltoyes'}>All Toys</Link>
                 <Link  className="btn btn-sm btn-outline btn-error">My Toys</Link>
-                <Link  className="btn btn-sm btn-outline btn-error">Add A Toys</Link>
+                <Link  className="btn btn-sm btn-outline btn-error" to={'/addtoy'}>Add A Toys</Link>
             </div>
             <div className="">
                 <Link  className="btn btn-sm btn-outline btn-success" to={'login'}>Log In</Link>
