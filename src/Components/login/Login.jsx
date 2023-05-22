@@ -12,7 +12,8 @@ const Login = () => {
         console.log(email,password);
         login(email,password)
         .then(result=> {
-            const user = user.result;
+            const user = result.user;
+            event.target.reset();
             console.log(user)
         })
         .catch(error => {

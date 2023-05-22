@@ -21,6 +21,7 @@ const Sing = () => {
         .then(result => {
             const user = result.user;
             navigate(from , {replace: true})
+            event.target.reset();
             console.log(user)
         })
         .catch(error=>{
@@ -40,18 +41,20 @@ const Sing = () => {
     }
 
     return (
-        <div className=''>
+        <div className='tetx-center'>
              <form onSubmit={singMethod} className='form-area text-center'>
-                <input type="text" name="name" id="name"  placeholder='Entry Your Name'/><br />
+                <input type="text" name="name" id="name"  placeholder='Entry Your Name'required/><br />
                 <input type="email" name="email" id="email"  placeholder='Entry your Email'/><br />
-                <input type="password" name="password" id="password"  placeholder='Entry your password'/><br />
-                <input type="url" name="url" id="url"  placeholder='Entry Your Photo Url'/><br />
-                <input className='btn my-5 btn-outline btn-error' type="submit" value="Sing Up" /><br />
+                <input type="password" name="password" id="password"  placeholder='Entry your password' required/><br />
+                <input type="url" name="url" id="url"  placeholder='Entry Your Photo Url' required/><br />
+                <input className='btn my-5 btn-outline btn-error' type="submit" value="Sing Up" required /><br />
                 <p className='tx'>Al-ready you have a account now<Link to={'/logIN'} className='text-green-500'> Log in </Link>  </p>
                 <hr className='border-4 my-5 w-48 mx-auto border-green-500'/>
-                <button onClick={googleMethod} className='btn btn-outline btn-error text-center' ><FaGoogle className='mx-3 text-2xl'/>Login with Google</button><br /><br />
+                
             </form>
-        
+            <div className="mx-auto text-center">
+                <button onClick={googleMethod} className='btn btn-outline btn-error' ><FaGoogle className='mx-3 text-2xl text-center'/>Login with Google</button><br /><br />
+            </div>
            
         </div>
     );

@@ -13,11 +13,13 @@ import AuthProvider from './authProvider/AuthProvider.jsx';
 import SingleToy from './Components/singleToy/SingleToy.jsx';
 import PrivateRoute from '../PrivateRoute.jsx';
 import AddToy from './Components/addData/AddToy.jsx';
+import MyToy from './Components/mytoy/MyToy.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
+    errorElement:<Error></Error>,
     children:[
     {
       path:"/",
@@ -49,12 +51,15 @@ const router = createBrowserRouter([
     {
       path:"newToy/:id",
       element:<PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
-      // loader:({params})=> fetch(`https://myservar-israfil3.vercel.app/superman/${params.id}`)
-      loader:({params})=> fetch(`http://localhost:5000/superman/${params.id}`)
+      loader:({params})=> fetch(`https://myservar-israfil3.vercel.app/superman/${params.id}`)
     },
     {
       path:"addtoy",
       element:<AddToy></AddToy>
+    },
+    {
+      path:"mytoy",
+      element:<MyToy></MyToy>
     }
  
 

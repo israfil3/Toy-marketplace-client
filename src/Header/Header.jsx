@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css'
 import Slider from '../Components/gallre/salider/Slider';
 import CarTabs from '../Components/allTabs/CarTabs';
+import Section1 from '../Components/subSection/Section1';
 
 const Header = () => {
     return (
@@ -33,6 +34,9 @@ const Header = () => {
                 </div>
                 <div className="">
                    <CarTabs></CarTabs>
+                </div>
+                <div className="">
+                    <Section1></Section1>
                 </div>
                 </>
             );

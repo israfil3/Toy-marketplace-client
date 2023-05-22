@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
         <Home></Home>
-        <Outlet></Outlet>
+          <Outlet></Outlet>
         <Footer></Footer>
     </div>
   );
