@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css'
 import Slider from '../Components/gallre/salider/Slider';
 import CarTabs from '../Components/allTabs/CarTabs';
-import Section1 from '../Components/subSection/Section1';
+import Section1 from '../Components/sectionAdd/AddSection/Section1';
 
 const Header = () => {
     return (
@@ -36,7 +36,7 @@ const Header = () => {
                    <CarTabs></CarTabs>
                 </div>
                 <div className="">
-                    <Section1></Section1>
+                   <Section1></Section1>
                 </div>
                 </>
             );
