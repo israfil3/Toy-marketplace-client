@@ -14,7 +14,7 @@ const Section1 = () => {
 
                 <button className='btn btn-outline btn-error mt-4'>join now</button>
             </div>
-            <div className="border rounded-[50%] border-red-700">
+            <div className="border-4 rounded-[50%] border-red-700">
                <img className='w-[90%]' src={logo} alt="" />
             </div>
             
