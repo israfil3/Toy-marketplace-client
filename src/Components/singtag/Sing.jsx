@@ -17,6 +17,9 @@ const Sing = () => {
         const email =form.email.value;
         const password = form.password.value
         const url = form.url.value;
+        if(password.length < 6){
+            return alert('at list 6 digit password now')
+        }
         createUser(email,password)
         .then(result => {
             const user = result.user;
