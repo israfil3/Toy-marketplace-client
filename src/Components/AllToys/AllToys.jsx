@@ -16,7 +16,7 @@ const AllToys = () => {
     return (
 
         <div> 
-           <div className="flex justify-between px-10 text-2xl">
+           <div className="grid lg:grid-cols-6 sm:mx-auto justify-between px-10 text-2xl">
               <h1>Seller</h1>
               <h1>Toy Name</h1>
               <h1>Sub-category</h1>

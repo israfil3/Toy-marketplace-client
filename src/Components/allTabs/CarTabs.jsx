@@ -28,7 +28,7 @@ const CarTabs = () => {
                   </TabList>
 
                   <TabPanel className="">
-                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                  <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[0]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>
@@ -41,7 +41,7 @@ const CarTabs = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                    <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[1]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>
@@ -57,7 +57,7 @@ const CarTabs = () => {
                   </TabPanel>
                               
                   <TabPanel>
-                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                  <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[2]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>
@@ -70,7 +70,7 @@ const CarTabs = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                    <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[3]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>
@@ -86,7 +86,7 @@ const CarTabs = () => {
                   </TabPanel>
 
                   <TabPanel>
-                  <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                  <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[4]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>
@@ -99,7 +99,7 @@ const CarTabs = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="card w-[40%] bg-base-100 shadow-xl grid grid-cols-2 mx-auto my-10">
+                    <div className="card lg:w-[40%] bg-base-100 shadow-xl lg:grid lg:grid-cols-2 mx-auto my-10">
                       <figure className="px-10 pt-10">
                         <img src={useData[5]?.picture} alt="Shoes" className="rounded-xl" />
                       </figure>

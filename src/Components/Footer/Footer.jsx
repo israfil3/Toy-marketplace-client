@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaBeer, FaApple,FaPaypal,FaCcVisa,FaFacebookF,FaGooglePlusG,FaInstagram,FaArrowAltCircleUp,FaRegArrowAltCircleRight} from 'react-icons/fa'
+import logo from './My project (1).png'
 const Footer = () => {
     return (
         <div className='bg-stone-600 text-white p-10'>
-            <div className="grid grid-cols-3 px-20 my-10 text-center">
+            <div className="lg:grid lg:grid-cols-3  lg:my-10 text-center">
                 <div className="text-2xl text-left">
+                    <img className='w-[30%]' src={logo} alt="" />
                     <h1 className='mb-10'>GET UPDATES FUN <br /> STUFF YOU PROBABLY WANT <br /> TO NOW ABOUT IN YOUR INBOX</h1>
                     <div className="flex items-center gap-3">
                     <input className='border-2  border-t-0 border-l-0 border-r-0 rounded' type="email" name="email" placeholder='Email address'  /><FaRegArrowAltCircleRight/>
@@ -28,18 +30,18 @@ const Footer = () => {
                 </div>
             </div>
           
-            <div className="flex justify-between px-20">
-               <div className="flex gap-4 text-4xl text-yellow-500">
+            <div className="grid grid-cols-3 items-center gap-5">
+               <div className="flex gap-4 text-4xl text-yellow-500 text-center">
                     <FaApple></FaApple>
                     <FaPaypal></FaPaypal>
                     <FaCcVisa></FaCcVisa>
                </div>
-                <div className="flex gap-4 text-4xl text-yellow-500">
+                <div className="flex gap-4 text-4xl text-yellow-500 ">
                     <FaFacebookF/>
                     <FaGooglePlusG/>
                     <FaInstagram/>
                 </div>
-                <FaArrowAltCircleUp className='text-4xl text-yellow-500'/>
+               <FaArrowAltCircleUp className='text-4xl text-yellow-500'/>
             </div>
         </div>
     );

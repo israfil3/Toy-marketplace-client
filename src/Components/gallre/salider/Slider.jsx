@@ -1,6 +1,6 @@
 // import React from 'react';
 import './slider.css'
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import {SlideshowLightbox} from 'lightbox.js-react'
 import 'lightbox.js-react/dist/index.css'
 
@@ -19,7 +19,7 @@ const Slider = () => {
         <>  
             <h1 className='text-center text-4xl mt-6 font-head'>Img-Gallery</h1>
             <hr className='h-tag' />
-            <SlideshowLightbox className="container grid grid-cols-3 gap-8 dk">
+            <SlideshowLightbox className="container lg:grid grid-cols-3 gap-8 dk">
                     <img className="w-full rounded" src={img1} />
                     <img className="w-full rounded" src={img2} />
                     <img className="w-full rounded" src={img3} />

@@ -14,12 +14,12 @@ import SingleToy from './Components/singleToy/SingleToy.jsx';
 import PrivateRoute from '../PrivateRoute.jsx';
 import AddToy from './Components/addData/AddToy.jsx';
 import MyToy from './Components/mytoy/MyToy.jsx';
+import Error from './error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
-    errorElement:<Error></Error>,
     children:[
     {
       path:"/",
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
     {
       path:"home",
       element:<Header></Header>
+    },
+    {
+      path: '/*',
+      element: <Error></Error>
     },
     {
       path:"blog",
