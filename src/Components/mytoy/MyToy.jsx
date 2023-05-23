@@ -5,7 +5,7 @@ const MyToy = () => {
     const {user} = useContext(AuthContext)
     return (
         <div>
-            <h1>myt</h1>
+            <h1>m!!!!!!!!!!!!!</h1>
         </div>
     );
 };
