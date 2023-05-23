@@ -3,11 +3,15 @@ import './header.css'
 import Slider from '../Components/gallre/salider/Slider';
 import CarTabs from '../Components/allTabs/CarTabs';
 import Section1 from '../Components/sectionAdd/AddSection/Section1';
+import Section2 from '../Components/sectionAdd/AddSection/Section2';
 
 const Header = () => {
     return (
                 <>
-                       <div>
+                <div className="">
+                    <Section2></Section2>
+                </div>
+              <div>
               <div className="carousel total-width mx-auto">
                     <div id="item1" className="carousel-item w-full">
                         <img  src="https://c4.wallpaperflare.com/wallpaper/1016/903/650/render-superman-black-uniform-wallpaper-preview.jpg" className="img-height" />
